@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121316;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:max(1.5rem,env(safe-area-inset-bottom,0px));}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-variant": "#343538", "inverse-primary": "#674bb5", "inverse-on-surface": "#2f3034", "on-surface": "#e3e2e6", "primary-fixed": "#e8ddff", "on-primary-fixed": "#21005e", "tertiary": "#a4c9ff", "error-container": "#93000a", "secondary-fixed-dim": "#6cdbac", "on-tertiary-container": "#003564", "error": "#ffb4ab", "on-tertiary-fixed": "#001c39", "on-secondary-fixed": "#002115", "on-primary": "#381385", "secondary-container": "#2ca379", "tertiary-fixed-dim": "#a4c9ff", "outline": "#948e9d", "primary-container": "#a78bfa", "on-primary-fixed-variant": "#4f319c", "surface-bright": "#38393c", "surface-container-low": "#1b1b1f", "on-background": "#e3e2e6", "tertiary-fixed": "#d4e3ff", "tertiary-container": "#6a9fe5", "on-error-container": "#ffdad6", "on-secondary-container": "#003120", "surface-container-high": "#292a2d", "outline-variant": "#494552", "on-secondary": "#003826", "surface": "#121316", "surface-container-lowest": "#0d0e11", "primary-fixed-dim": "#cebdff", "surface-container": "#1f1f23", "surface-dim": "#121316", "on-tertiary-fixed-variant": "#004883", "on-surface-variant": "#cac4d4", "surface-container-highest": "#343538", "background": "#121316", "inverse-surface": "#e3e2e6", "secondary-fixed": "#89f8c7", "on-secondary-fixed-variant": "#005139", "on-tertiary": "#00315d", "on-error": "#690005", "surface-tint": "#cebdff", "on-primary-container": "#3c1989", "primary": "#cebdff", "secondary": "#6cdbac" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-md": "0.75rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "1.25rem" }, fontFamily: { "body-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Dayflow Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1U1WlqjCdna9blSlbkZJ5wb5Ca4kdi9cGA628JjzUBcKEGgH4m4zhegceAy1tXX1xTgQHJ0b6hyVJAbDZN9OppEG8wL20RD7Qqzst7CxDI4DQvkvE_urS0LwvIUMfL72ZEYU9hrvIU3MQ1vTe3KY3L8FpntUWUmrNV9io0GspVL3X5EuTbD6Qi7J08vkJYxxj7lWVhRFhgs4mC_kcOjN6-AcJq79o3peFIkIW8tiNauXaxDgDVTzFuYmjQ"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Dayflow</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Week</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Profile Menu" class="w-11 h-11 flex items-center justify-center rounded-full transition-transform active:scale-95"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RXvx7cJfrRLT2PzCs60GGfr6onj8BHlbsE2eVAVId195qtHME3YZpoC-nvRroLhhh5ZBKJSvOanSLM-zxoNcwj_xTdwaQdP2Ty-PjRh2-NQmCDzamGPt0JrbwS1wqmS-vbpQUZu5OTDDm_AAaX2iDS0tAUV1gRgaeQb8Uy144KTi1zZv_P2cV3ZBSSjUbSwHexjdGs5xHfs0_cywe4in0P-AfdSniwQ4AgW76uFG7DH3_13Gc1Fb"/></button></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full gap-space-md">
+<!-- Month & View Switcher Bar -->
+<section class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<button aria-label="Previous week" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:bg-surface-bright active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<div class="flex items-center gap-space-xs px-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">October 2024</span>
+</div>
+<button aria-label="Next week" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:bg-surface-bright active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-md text-label-md hover:text-on-surface active:scale-95 transition-all">
+        This Week
+      </button>
+</div>
+<!-- View Mode Selector Segment -->
+<div class="grid grid-cols-3 gap-1 p-1 bg-surface-container-lowest rounded-full">
+<button class="py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center">Day</button>
+<button class="py-1.5 rounded-full font-label-md text-label-md bg-surface-container-highest text-primary font-semibold shadow-sm text-center">3-Day</button>
+<button class="py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center">Summary</button>
+</div>
+</section>
+<!-- Horizontal 7-Day Date Strip -->
+<section class="flex flex-col gap-space-xs bg-surface-container-low p-space-sm rounded-xl overflow-hidden shadow-sm">
+<div class="grid grid-cols-7 gap-1 text-center">
+<!-- Mon 21 -->
+<button class="flex flex-col items-center py-2 px-1 rounded-lg hover:bg-surface-container transition-all group">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MON</span>
+<span class="font-headline-sm text-headline-sm text-on-surface my-0.5">21</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</button>
+<!-- Tue 22 -->
+<button class="flex flex-col items-center py-2 px-1 rounded-lg hover:bg-surface-container transition-all group">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TUE</span>
+<span class="font-headline-sm text-headline-sm text-on-surface my-0.5">22</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</button>
+<!-- Wed 23 -->
+<button class="flex flex-col items-center py-2 px-1 rounded-lg hover:bg-surface-container transition-all group">
+<span class="font-label-sm text-label-sm text-on-surface-variant">WED</span>
+<span class="font-headline-sm text-headline-sm text-on-surface my-0.5">23</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</button>
+<!-- Thu 24 (Active Focus Day) -->
+<button class="flex flex-col items-center py-2 px-1 rounded-xl bg-primary-container text-on-primary-container shadow-md scale-105 transition-all">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider text-on-primary-container">THU</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary-container my-0.5">24</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-container"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-container"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-container"></span>
+</div>
+</button>
+<!-- Fri 25 -->
+<button class="flex flex-col items-center py-2 px-1 rounded-lg hover:bg-surface-container transition-all group">
+<span class="font-label-sm text-label-sm text-on-surface-variant">FRI</span>
+<span class="font-headline-sm text-headline-sm text-on-surface my-0.5">25</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span>
+</div>
+</button>
+<!-- Sat 26 -->
+<button class="flex flex-col items-center py-2 px-1 rounded-lg hover:bg-surface-container transition-all group">
+<span class="font-label-sm text-label-sm text-on-surface-variant">SAT</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant my-0.5">26</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span>
+</div>
+</button>
+<!-- Sun 27 -->
+<button class="flex flex-col items-center py-2 px-1 rounded-lg hover:bg-surface-container transition-all group">
+<span class="font-label-sm text-label-sm text-on-surface-variant">SUN</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant my-0.5">27</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span>
+</div>
+</button>
+</div>
+</section>
+<!-- Summary Metric Strip -->
+<section class="flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface">32h Planned</span>
+</div>
+<span class="text-surface-variant font-label-md">•</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface-variant">8.5h Free</span>
+</div>
+<span class="text-surface-variant font-label-md">•</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-secondary font-semibold">82% On Track</span>
+</div>
+</section>
+<!-- Visual Timeline Header Status -->
+<div class="flex items-center justify-between px-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Schedule</span>
+<span class="font-label-sm text-label-sm text-primary bg-primary-container/20 px-2 py-0.5 rounded-full">Thursday Focused</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock_clock</span>
+<span>Autonomous Flow</span>
+</div>
+</div>
+<!-- Vertical Hourly Timeline Grid -->
+<div class="relative flex flex-col gap-3 bg-surface-container-low p-space-md rounded-xl">
+<!-- 06:00 DSA Practice (Mint habit) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-1 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">06:00</span>
+</div>
+<div class="flex-1 rounded-xl bg-secondary-container p-space-sm text-on-secondary-container shadow-sm transition-transform active:scale-[0.99]">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-secondary-container/80">Habit • 60m</span>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-semibold mt-0.5">DSA Practice</h2>
+<p class="font-body-sm text-body-sm text-on-secondary-container/90 mt-0.5 truncate">Binary Tree Inversion &amp; Dynamic Programming</p>
+</div>
+</div>
+<!-- 07:00 Mobility & Stretching (Soft blue 30m) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-1 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">07:00</span>
+</div>
+<div class="flex-1 rounded-xl bg-tertiary-container p-space-sm text-on-tertiary-container shadow-sm transition-transform active:scale-[0.99]">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-tertiary-container/80">Wellness • 30m</span>
+<span class="material-symbols-outlined text-[18px]">self_improvement</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-semibold mt-0.5">Mobility &amp; Stretching</h2>
+</div>
+</div>
+<!-- 08:00 Commute & Morning Prep (Quick spacer block) -->
+<div class="flex items-center gap-3 min-w-0 opacity-70">
+<div class="w-11 shrink-0 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">08:00</span>
+</div>
+<div class="flex-1 py-1.5 px-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Light Reading &amp; Matcha</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">45m</span>
+</div>
+</div>
+<!-- 09:00 Deep Work: Client Deliverable & Architecture (Lavender 3.5h) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-2 text-right">
+<span class="font-label-sm text-label-sm text-primary font-bold">09:00</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant/70 mt-12">12:30</span>
+</div>
+<div class="flex-1 rounded-xl bg-primary-container p-space-md text-on-primary-container shadow-md relative overflow-hidden transition-transform active:scale-[0.99]">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide uppercase">Deep Work • 3h 30m</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-primary-container/80">lock</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile font-semibold mt-1">Client Deliverable &amp; Architecture</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container/90 mt-1 line-clamp-2">Schema migrations, distributed locks, and event bus contracts for v2 release.</p>
+<div class="flex items-center gap-space-sm mt-3 pt-2 bg-on-primary-container/10 -mx-space-md -mb-space-md px-space-md py-2">
+<span class="material-symbols-outlined text-[16px]">do_not_disturb_on</span>
+<span class="font-label-sm text-label-sm font-medium">Digital Sanctuary Mode Engaged</span>
+</div>
+</div>
+</div>
+<!-- 13:00 Lunch & Walk (Muted Neutral 60m) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-1 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">13:00</span>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-high p-space-sm text-on-surface shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Rest &amp; Nourish • 60m</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">restaurant</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm mt-0.5">Lunch &amp; Walk</h2>
+</div>
+</div>
+<!-- 15:00 System Design Review (Lavender block 2h) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-1 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">15:00</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant/70 mt-6">17:00</span>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-highest p-space-md text-on-surface shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Collaboration • 2h</span>
+<span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-semibold mt-0.5">System Design Review</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate">Cross-region read replicas with backend lead</p>
+</div>
+</div>
+<!-- CURRENT TIME INDICATOR LINE -->
+<div class="relative flex items-center gap-3 -my-1 py-1 z-10">
+<div class="w-11 shrink-0 text-right">
+<span class="font-label-sm text-label-sm text-primary font-bold">18:25</span>
+</div>
+<div class="flex-1 flex items-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_8px_rgba(206,189,255,0.8)]"></div>
+<div class="flex-1 h-0.5 bg-primary/80 shadow-[0_0_6px_rgba(206,189,255,0.4)]"></div>
+</div>
+</div>
+<!-- 18:00 Spring Boot Development (Active NOW slot) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-2 text-right">
+<span class="font-label-sm text-label-sm text-primary font-bold">18:00</span>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-high p-space-md text-on-surface shadow-lg relative overflow-hidden transition-all">
+<!-- Ambient radiant halo accent -->
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-md text-label-md font-bold text-secondary uppercase tracking-wider">ACTIVE NOW • 60m</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-container/30 px-2 py-0.5 rounded-full">35m left</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-semibold mt-1">Spring Boot Development</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Kafka payload serialization &amp; reactive repository queries</p>
+</div>
+</div>
+<!-- 19:00 AWS Builder Center Streak (Quick Action Amber / Tertiary 15m) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-1 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:00</span>
+</div>
+<div class="flex-1 rounded-xl bg-surface-bright p-space-sm text-on-surface shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span class="font-label-md text-label-md text-secondary font-semibold uppercase">Micro Streak • 15m</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary">local_fire_department</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm mt-0.5">AWS Builder Center Streak</h2>
+</div>
+</div>
+<!-- 19:15 DevOps Learning (Soft Blue 45m) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-1 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:15</span>
+</div>
+<div class="flex-1 rounded-xl bg-tertiary-container/30 p-space-sm text-on-surface shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-tertiary font-medium uppercase tracking-wider">Skill Growth • 45m</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">school</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm mt-0.5">DevOps Learning</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Helm charts and ArgoCD rollouts</p>
+</div>
+</div>
+<!-- 20:00 - 21:30 Open Focus Window (Tap Invitation) -->
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-11 shrink-0 pt-2 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">20:00</span>
+</div>
+<button class="flex-1 flex flex-col items-center justify-center py-6 px-space-md rounded-xl bg-surface-container-lowest/60 hover:bg-surface-container-lowest active:scale-[0.99] transition-all text-center group">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 transition-transform mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">+ Tap to plan focus or rest</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">90 minutes open slot before evening wind down</span>
+</button>
+</div>
+<!-- 22:00 Sleep Ritual Horizon -->
+<div class="flex items-center gap-3 min-w-0 opacity-50">
+<div class="w-11 shrink-0 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">22:00</span>
+</div>
+<div class="flex-1 h-px bg-surface-variant"></div>
+</div>
+</div>
+<!-- Contextual Quick Action Tray -->
+<section class="flex flex-col gap-space-xs bg-surface-container p-space-md rounded-xl shadow-md">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Autonomous Workflow Hub</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">1 Alert</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Apply Template Action -->
+<button class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright active:scale-[0.98] transition-all text-left">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Apply Weekly Template</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Engineering Routine (36h focus)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">arrow_forward</span>
+</button>
+<!-- Reschedule Unfinished Action -->
+<button class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright active:scale-[0.98] transition-all text-left">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">update</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Reschedule Unfinished (1)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Auto-slot 'PostgreSQL indexing' into Friday morning</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interaction: day toggle delight
+  document.querySelectorAll('section:nth-of-type(2) button').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('section:nth-of-type(2) button').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary-container', 'scale-105', 'shadow-md');
+        b.classList.add('hover:bg-surface-container');
+        const dayLabel = b.querySelector('.tracking-wider');
+        if (dayLabel) {
+          dayLabel.classList.remove('text-on-primary-container');
+          dayLabel.classList.add('text-on-surface-variant');
+        }
+        const numLabel = b.querySelector('span:nth-child(2)');
+        if (numLabel) {
+          numLabel.classList.remove('text-on-primary-container', 'font-bold');
+          numLabel.classList.add('text-on-surface');
+        }
+      });
+      button.classList.add('bg-primary-container', 'text-on-primary-container', 'scale-105', 'shadow-md');
+      button.classList.remove('hover:bg-surface-container');
+      const dayLabel = button.querySelector('.tracking-wider');
+      if (dayLabel) {
+        dayLabel.classList.add('text-on-primary-container');
+        dayLabel.classList.remove('text-on-surface-variant');
+      }
+      const numLabel = button.querySelector('span:nth-child(2)');
+      if (numLabel) {
+        numLabel.classList.add('text-on-primary-container', 'font-bold');
+        numLabel.classList.remove('text-on-surface');
+      }
+    });
+  });
+</script></main><div class="fixed bottom-6 right-margin-mobile z-50 pointer-events-auto pb-safe"><button aria-label="Create task" class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_24px_-2px_rgba(167,139,250,0.45)] hover:scale-105 active:scale-95 transition-all"><span class="material-symbols-outlined text-[28px]">add</span></button></div><nav class="fixed bottom-0 inset-x-0 z-40 pb-safe bg-surface-container-low/90 backdrop-blur-2xl shadow-[0_-1px_12px_rgba(0,0,0,0.25)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="today" href="#"><span class="material-symbols-outlined text-[22px]">today</span><span class="font-label-sm text-label-sm tracking-wide">Today</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs transition-colors text-primary font-label-md" data-path="week" href="#"><span class="material-symbols-outlined text-[22px]">calendar_view_week</span><span class="font-label-sm text-label-sm tracking-wide">Week</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="focus" href="#"><span class="material-symbols-outlined text-[22px]">timer</span><span class="font-label-sm text-label-sm tracking-wide">Focus</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="progress" href="#"><span class="material-symbols-outlined text-[22px]">insights</span><span class="font-label-sm text-label-sm tracking-wide">Progress</span></a></div></nav></body></html>

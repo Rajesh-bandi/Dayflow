@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121316;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:max(1.5rem,env(safe-area-inset-bottom,0px));}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-variant": "#343538", "inverse-primary": "#674bb5", "inverse-on-surface": "#2f3034", "on-surface": "#e3e2e6", "primary-fixed": "#e8ddff", "on-primary-fixed": "#21005e", "tertiary": "#a4c9ff", "error-container": "#93000a", "secondary-fixed-dim": "#6cdbac", "on-tertiary-container": "#003564", "error": "#ffb4ab", "on-tertiary-fixed": "#001c39", "on-secondary-fixed": "#002115", "on-primary": "#381385", "secondary-container": "#2ca379", "tertiary-fixed-dim": "#a4c9ff", "outline": "#948e9d", "primary-container": "#a78bfa", "on-primary-fixed-variant": "#4f319c", "surface-bright": "#38393c", "surface-container-low": "#1b1b1f", "on-background": "#e3e2e6", "tertiary-fixed": "#d4e3ff", "tertiary-container": "#6a9fe5", "on-error-container": "#ffdad6", "on-secondary-container": "#003120", "surface-container-high": "#292a2d", "outline-variant": "#494552", "on-secondary": "#003826", "surface": "#121316", "surface-container-lowest": "#0d0e11", "primary-fixed-dim": "#cebdff", "surface-container": "#1f1f23", "surface-dim": "#121316", "on-tertiary-fixed-variant": "#004883", "on-surface-variant": "#cac4d4", "surface-container-highest": "#343538", "background": "#121316", "inverse-surface": "#e3e2e6", "secondary-fixed": "#89f8c7", "on-secondary-fixed-variant": "#005139", "on-tertiary": "#00315d", "on-error": "#690005", "surface-tint": "#cebdff", "on-primary-container": "#3c1989", "primary": "#cebdff", "secondary": "#6cdbac" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-md": "0.75rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "1.25rem" }, fontFamily: { "body-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Dayflow Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1U1WlqjCdna9blSlbkZJ5wb5Ca4kdi9cGA628JjzUBcKEGgH4m4zhegceAy1tXX1xTgQHJ0b6hyVJAbDZN9OppEG8wL20RD7Qqzst7CxDI4DQvkvE_urS0LwvIUMfL72ZEYU9hrvIU3MQ1vTe3KY3L8FpntUWUmrNV9io0GspVL3X5EuTbD6Qi7J08vkJYxxj7lWVhRFhgs4mC_kcOjN6-AcJq79o3peFIkIW8tiNauXaxDgDVTzFuYmjQ"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Dayflow</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Today</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Profile Menu" class="w-11 h-11 flex items-center justify-center rounded-full transition-transform active:scale-95"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RXvx7cJfrRLT2PzCs60GGfr6onj8BHlbsE2eVAVId195qtHME3YZpoC-nvRroLhhh5ZBKJSvOanSLM-zxoNcwj_xTdwaQdP2Ty-PjRh2-NQmCDzamGPt0JrbwS1wqmS-vbpQUZu5OTDDm_AAaX2iDS0tAUV1gRgaeQb8Uy144KTi1zZv_P2cV3ZBSSjUbSwHexjdGs5xHfs0_cywe4in0P-AfdSniwQ4AgW76uFG7DH3_13Gc1Fb"/></button></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full gap-y-5">
+<!-- Subtle Header Introduction -->
+<section class="flex flex-col gap-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">QUICK ACTIONS</span>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">6 Active</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm">2 Due Today</span>
+</div>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold">Instant Rituals &amp; Links</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Frictionless triggers to launch destinations, execute mini-routines, and log streaks with anti-cheat verification.
+    </p>
+</section>
+<!-- Filter & Management Carousel -->
+<section class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 -mx-margin-mobile px-margin-mobile">
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-1.5">
+<span>All (6)</span>
+</button>
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">local_fire_department</span>
+<span>Streaks (3)</span>
+</button>
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">terminal</span>
+<span>Dev &amp; Work (2)</span>
+</button>
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">auto_stories</span>
+<span>Learning (1)</span>
+</button>
+<button class="shrink-0 h-8 px-3 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform ml-auto">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>New</span>
+</button>
+</section>
+<!-- Hero Spotlight: AWS Builder Center Daily Challenge -->
+<section class="relative overflow-hidden rounded-2xl bg-surface-container p-4 shadow-xl flex flex-col gap-3.5">
+<div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">cloud_sync</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold uppercase">Daily Challenge</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">schedule</span> ~15m
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium truncate mt-0.5">AWS Builder Center</h3>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-container-highest">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">12-Day</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">+15 XP</span>
+</div>
+</div>
+<!-- URL Indicator Bar -->
+<div class="flex items-center justify-between px-3 py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm min-w-0">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[15px] text-primary shrink-0">link</span>
+<span class="truncate font-body-sm text-body-sm text-on-surface">https://builder.aws.com/</span>
+</div>
+<span class="shrink-0 text-outline text-[11px] font-label-sm uppercase ml-2">Chrome Tab</span>
+</div>
+<!-- CTA & Anti-cheat notice -->
+<div class="flex flex-col gap-2 pt-0.5">
+<div class="grid grid-cols-1 gap-2" id="aws-hero-action-slot">
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-[0_0_20px_-3px_rgba(167,139,250,0.35)] active:scale-[0.98] transition-all" id="hero-run-btn">
+<span>Run Action Now</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+<div class="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-[14px] text-secondary shrink-0">verified_user</span>
+<span class="font-label-sm text-label-sm truncate">Requires return confirmation after visit</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline shrink-0 ml-1">Anti-Cheat active</span>
+</div>
+</div>
+</section>
+<!-- Interactive Configured Quick Actions Feed -->
+<section class="flex flex-col gap-y-3">
+<div class="flex items-center justify-between px-0.5">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold tracking-wide uppercase">Configured Routine Stack</h4>
+<span class="font-label-sm text-label-sm text-outline">Tap row to inspect</span>
+</div>
+<!-- Action 1: LeetCode Daily Problem -->
+<div class="rounded-xl bg-surface-container p-3.5 flex flex-col gap-2.5 transition-colors">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-tertiary">Dev Practice</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily 06:00</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium truncate">LeetCode Daily Problem</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<div class="flex items-center gap-1 px-2 py-1 rounded-md bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-sm text-label-sm font-semibold">18d</span>
+</div>
+<button aria-label="Launch LeetCode" class="w-9 h-9 rounded-lg bg-surface-container-high hover:bg-surface-bright active:scale-95 text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">launch</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline px-1">
+<span class="font-label-sm text-label-sm text-outline truncate max-w-[200px]">https://leetcode.com/problemset/all/</span>
+<span class="font-label-sm text-label-sm text-primary">Pending verification</span>
+</div>
+</div>
+<!-- Action 2: GitHub Notifications & PR Review (Completed State) -->
+<div class="rounded-xl bg-surface-container-low p-3.5 flex flex-col gap-2 opacity-90 transition-opacity">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high/60 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weekdays 09:30</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Completed 09:42</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium line-through truncate">GitHub Review &amp; Triage</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="px-2 py-1 rounded-md bg-secondary/10 text-secondary font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Logged
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between px-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="truncate max-w-[220px]">Native App (GitHub Android)</span>
+<span class="text-secondary font-label-sm text-label-sm">+25 XP awarded</span>
+</div>
+</div>
+<!-- Action 3: PostgreSQL Docs / Deep Dive -->
+<div class="rounded-xl bg-surface-container p-3.5 flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">dataset</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-tertiary">Architecture &amp; Study</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mon, Wed, Fri</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium truncate">PostgreSQL Internal Docs</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-1 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Tomorrow</span>
+<button aria-label="Launch PostgreSQL Docs" class="w-9 h-9 rounded-lg bg-surface-container-high hover:bg-surface-bright active:scale-95 text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">launch</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline px-1">
+<span class="font-label-sm text-label-sm truncate max-w-[240px]">https://postgresql.org/docs/current/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:15 run</span>
+</div>
+</div>
+<!-- Action 4: Duolingo French Daily Sprint -->
+<div class="rounded-xl bg-surface-container p-3.5 flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">translate</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary">Language Streak</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily 21:00</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium truncate">Duolingo French Sprint</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<div class="flex items-center gap-1 px-2 py-1 rounded-md bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-sm text-label-sm font-semibold">42d</span>
+</div>
+<button aria-label="Launch Duolingo" class="w-9 h-9 rounded-lg bg-surface-container-high hover:bg-surface-bright active:scale-95 text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">launch</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline px-1">
+<span class="font-label-sm text-label-sm text-outline">Sandbox App Intent</span>
+<span class="font-label-sm text-label-sm text-primary">Scheduled tonight</span>
+</div>
+</div>
+</section>
+<!-- Interactive Automation & Strict Guard Settings -->
+<section class="rounded-2xl bg-surface-container p-4 flex flex-col gap-3.5">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium">Strict Verification Guard</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-0.5">
+          No automated checkmarks. Launching prompts a focus timer; completion requires returning to Dayflow and validating your session.
+        </p>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<!-- Toggle 1 -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
+<div class="flex flex-col min-w-0 pr-3">
+<span class="font-body-md text-body-md text-on-surface font-medium">Auto-launch on schedule prompt</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Opens target URI right upon notification tap</span>
+</div>
+<input checked="" class="peer sr-only" id="toggle-autolaunch" type="checkbox"/>
+<div class="w-11 h-6 rounded-full bg-surface-container-highest peer-checked:bg-primary-container relative transition-colors shrink-0 after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:rounded-full after:bg-on-surface-variant peer-checked:after:bg-on-primary-container peer-checked:after:translate-x-5 after:transition-transform"></div>
+</label>
+<!-- Toggle 2 -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer">
+<div class="flex flex-col min-w-0 pr-3">
+<span class="font-body-md text-body-md text-on-surface font-medium">Haptic return reminder</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Triggers gentle pulse after 15m deep dive</span>
+</div>
+<input checked="" class="peer sr-only" id="toggle-haptic" type="checkbox"/>
+<div class="w-11 h-6 rounded-full bg-surface-container-highest peer-checked:bg-primary-container relative transition-colors shrink-0 after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:rounded-full after:bg-on-surface-variant peer-checked:after:bg-on-primary-container peer-checked:after:translate-x-5 after:transition-transform"></div>
+</label>
+</div>
+</section>
+<!-- Popular Presets / Template Library -->
+<section class="flex flex-col gap-y-3">
+<div class="flex items-center justify-between px-0.5">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold tracking-wide uppercase">Preset Gallery</h4>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+        Explore all <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Preset 1 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Stack Overflow Daily Review</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tagged questions in #rust, #wasm</span>
+</div>
+</div>
+<button class="preset-add-btn shrink-0 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary active:scale-95 font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">add</span>
+<span>Add</span>
+</button>
+</div>
+<!-- Preset 2 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[18px]">newspaper</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">System Design Newsletter</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Substack inbox • 15m focus slot</span>
+</div>
+</div>
+<button class="preset-add-btn shrink-0 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary active:scale-95 font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">add</span>
+<span>Add</span>
+</button>
+</div>
+<!-- Preset 3 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Morning Journal Notion Link</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Deep links into Daily Notes page</span>
+</div>
+</div>
+<button class="preset-add-btn shrink-0 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary active:scale-95 font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">add</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Client Behavior -->
+<script>
+    (function initQuickActions() {
+      const runBtn = document.getElementById('hero-run-btn');
+      const actionSlot = document.getElementById('aws-hero-action-slot');
+
+      if (runBtn && actionSlot) {
+        runBtn.addEventListener('click', () => {
+          // Simulate launch & show verification pending state
+          actionSlot.innerHTML = `
+            <div class="flex flex-col gap-2 w-full animate-fadeIn">
+              <div class="p-3 rounded-xl bg-secondary/15 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[20px] text-secondary">hourglass_top</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-lg text-label-lg text-secondary font-semibold">Active Session in Browser</span>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant">Target opened in external tab</span>
+                  </div>
+                </div>
+                <span class="font-label-md text-label-md text-secondary font-mono">14:59</span>
+              </div>
+              <button id="verify-return-btn" class="w-full h-12 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md active:scale-95 transition-all">
+                <span class="material-symbols-outlined text-[20px]">check_circle</span>
+                <span>Returned? Mark Complete &amp; Log Streak</span>
+              </button>
+            </div>
+          `;
+
+          const verifyBtn = document.getElementById('verify-return-btn');
+          if (verifyBtn) {
+            verifyBtn.addEventListener('click', () => {
+              actionSlot.innerHTML = `
+                <div class="p-3 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center gap-2">
+                  <span class="material-symbols-outlined text-[20px]">verified</span>
+                  <span class="font-label-lg text-label-lg font-semibold">13-Day Streak Logged! (+15 XP)</span>
+                </div>
+              `;
+            });
+          }
+        });
+      }
+
+      // Micro-interaction for preset buttons
+      const presetBtns = document.querySelectorAll('.preset-add-btn');
+      presetBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.innerHTML = `<span class="material-symbols-outlined text-[15px]">check</span><span>Added</span>`;
+          btn.classList.add('bg-secondary', 'text-on-secondary');
+          btn.disabled = true;
+        });
+      });
+    })();
+  </script>
+</div></main><div class="fixed bottom-6 right-margin-mobile z-50 pointer-events-auto pb-safe"><button aria-label="Create task" class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_24px_-2px_rgba(167,139,250,0.45)] hover:scale-105 active:scale-95 transition-all"><span class="material-symbols-outlined text-[28px]">add</span></button></div><nav class="fixed bottom-0 inset-x-0 z-40 pb-safe bg-surface-container-low/90 backdrop-blur-2xl shadow-[0_-1px_12px_rgba(0,0,0,0.25)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="today" href="#"><span class="material-symbols-outlined text-[22px]">today</span><span class="font-label-sm text-label-sm tracking-wide">Today</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="week" href="#"><span class="material-symbols-outlined text-[22px]">calendar_view_week</span><span class="font-label-sm text-label-sm tracking-wide">Week</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="focus" href="#"><span class="material-symbols-outlined text-[22px]">timer</span><span class="font-label-sm text-label-sm tracking-wide">Focus</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="progress" href="#"><span class="material-symbols-outlined text-[22px]">insights</span><span class="font-label-sm text-label-sm tracking-wide">Progress</span></a></div></nav></body></html>

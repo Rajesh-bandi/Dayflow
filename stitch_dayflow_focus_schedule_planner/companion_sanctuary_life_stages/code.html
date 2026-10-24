@@ -1,0 +1,336 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#121316;color:#e3e2e6;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),24px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#690005", "surface-container-highest": "#343538", "on-surface": "#e3e2e6", "primary-fixed": "#e8ddff", "on-primary-fixed-variant": "#4f319c", "surface-variant": "#343538", "tertiary": "#a4c9ff", "error": "#ffb4ab", "inverse-surface": "#e3e2e6", "tertiary-fixed": "#d4e3ff", "on-primary-fixed": "#21005e", "on-error-container": "#ffdad6", "on-secondary-container": "#003120", "on-background": "#e3e2e6", "on-tertiary-fixed-variant": "#004883", "background": "#121316", "surface-container": "#1f1f23", "surface-dim": "#121316", "on-tertiary": "#00315d", "surface": "#121316", "outline": "#948e9d", "secondary-fixed": "#89f8c7", "tertiary-container": "#6a9fe5", "on-secondary-fixed-variant": "#005139", "error-container": "#93000a", "secondary-fixed-dim": "#6cdbac", "surface-container-lowest": "#0d0e11", "tertiary-fixed-dim": "#a4c9ff", "inverse-on-surface": "#2f3034", "on-primary-container": "#3c1989", "surface-bright": "#38393c", "on-secondary-fixed": "#002115", "primary": "#cebdff", "primary-container": "#a78bfa", "surface-container-low": "#1b1b1f", "secondary-container": "#2ca379", "on-tertiary-container": "#003564", "secondary": "#6cdbac", "surface-tint": "#cebdff", "primary-fixed-dim": "#cebdff", "on-secondary": "#003826", "on-primary": "#381385", "on-tertiary-fixed": "#001c39", "on-surface-variant": "#cac4d4", "outline-variant": "#494552", "surface-container-high": "#292a2d", "inverse-primary": "#674bb5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "margin-mobile": "1rem", "space-lg": "1.25rem", "margin": "1.25rem", "space-xs": "0.25rem", "space-md": "0.75rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-xl": "2rem" }, "fontFamily": { "headline-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between px-margin-mobile h-6 select-none"><span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">09:41</span><div class="flex items-center gap-1.5 text-on-surface"><span class="material-symbols-outlined text-[14px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-14 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface font-medium truncate select-none">Permissions Setup</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe px-margin-mobile bg-surface"><div class="flex flex-col w-full pb-10 space-y-5">
+<!-- Sanctuary Status Bar -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Sanctuary In Sync</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-normal">Vitality 94%</span>
+</div>
+</div>
+<!-- Hero Companion Chamber -->
+<div class="relative w-full overflow-hidden rounded-3xl bg-surface-container-low shadow-xl p-5 flex flex-col items-center">
+<!-- Ambient Aura Backdrop -->
+<div class="absolute -top-12 -left-10 w-44 h-44 rounded-full bg-primary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -right-8 w-44 h-44 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<!-- Stage Tag -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest shadow-sm self-start mb-2">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">hotel_class</span>
+<span class="font-label-md text-label-md text-on-surface">Level 4 • Flourishing Companion</span>
+</div>
+<!-- Companion Interactive Stage -->
+<div class="relative w-full max-w-[270px] aspect-square my-1 flex items-center justify-center">
+<!-- Ambient Radiant Disc -->
+<div class="absolute inset-4 rounded-full bg-gradient-to-tr from-primary/20 via-tertiary/10 to-secondary/20 blur-2xl animate-pulse"></div>
+<!-- Character Frame & Tap Trigger -->
+<button aria-label="Pet Lumi" class="relative z-10 w-full h-full rounded-2xl overflow-hidden focus:outline-none transition-transform active:scale-95 duration-150 group" id="pet-companion-btn" type="button">
+<img alt="Lumi - 2D Vector Productivity Pet (Thriving)" class="w-full h-full object-cover object-center rounded-2xl drop-shadow-2xl transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UOxcS3NNJKt-d9EWU8dpnKCmTmsYxY2BM_DKv6xJVFkg8VpqL7JwoaQVI_EafNrRmrQsmiCTdVM0Xp5ZqUhbxK5dsqeOfBihbJUFcpA2yngR6CYz6TX6IxQjZmuO2dFVI3f9MUo_OSWGVtNMOsL_xZEeDRiTKKemcqTpSSyZAxEfaIoo7iicj7wNfGwnyyY9fAcinOh5HM-SroHhJyNd2ewloE4oWGMcQJjm8Gk892syL9A8MbgJKvrTk">
+<div class="absolute bottom-2 inset-x-2 flex items-center justify-center gap-1 py-1 px-2 rounded-full bg-surface-container-lowest/80 backdrop-blur-md opacity-90">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm text-on-surface">Tap to Pet &amp; Purr</span>
+</div>
+</button>
+<!-- Floating Particle Anchor -->
+<div class="absolute inset-0 pointer-events-none z-20 overflow-hidden" id="hearts-container"></div>
+</div>
+<!-- Companion Speech Bubble -->
+<div class="relative w-full mt-2 p-3.5 rounded-2xl bg-surface-container-high shadow-md">
+<div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-surface-container-high rotate-45"></div>
+<div class="relative z-10 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+          “I felt your deep work flow during <span class="text-primary font-medium">Spring Boot</span>! We unlocked the <span class="text-secondary font-medium">Starbloom Moss</span> for our cozy nook.”
+        </p>
+</div>
+</div>
+<!-- Mood Ribbon -->
+<div class="flex items-center justify-between w-full mt-3 pt-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Current Resonance</span>
+<span class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+        Joyful &amp; Focused (Thriving)
+      </span>
+</div>
+</div>
+<!-- Productivity-Anchored Care Actions -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Nurture &amp; Bond</span>
+<span class="font-label-sm text-label-sm text-primary">Harmonic Rituals</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<!-- Action 1: Pet / Purr -->
+<button class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all duration-150 text-center shadow-sm" id="pet-action-tile" type="button">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center text-primary mb-1.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Mindful Pet</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">Purr Haptic</span>
+</button>
+<!-- Action 2: Focus Session Boost -->
+<button class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all duration-150 text-center shadow-sm" type="button">
+<div class="w-10 h-10 rounded-full bg-secondary/15 flex items-center justify-center text-secondary mb-1.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">timer</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Deep Focus</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">+15 Vitality</span>
+</button>
+<!-- Action 3: Celebrate -->
+<button class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all duration-150 text-center shadow-sm" type="button">
+<div class="w-10 h-10 rounded-full bg-tertiary/15 flex items-center justify-center text-tertiary mb-1.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Milestone</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5">Starbloom</span>
+</button>
+</div>
+</div>
+<!-- Real-time Emotional Vitals Grid -->
+<div class="p-4 rounded-3xl bg-surface-container space-y-3.5 shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Emotional Vitals</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Real-time sync</span>
+</div>
+<!-- Vitality -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between font-label-lg text-label-lg">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[17px]">favorite</span>
+          Vitality Level
+        </span>
+<span class="text-primary font-semibold">94 / 100</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 94%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fed by task completion and active deep work blocks today.</span>
+</div>
+<!-- Mini Metrics Row -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="p-2.5 rounded-2xl bg-surface-container-high flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Harmony</span>
+<span class="font-headline-sm text-headline-sm text-secondary mt-0.5">88%</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">+6% vs lw</span>
+</div>
+<div class="p-2.5 rounded-2xl bg-surface-container-high flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recovery</span>
+<span class="font-headline-sm text-headline-sm text-tertiary mt-0.5">Optimal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Wind-down ready</span>
+</div>
+<div class="p-2.5 rounded-2xl bg-surface-container-high flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streak</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-0.5">12 Days</span>
+<span class="font-label-sm text-label-sm text-primary-container mt-0.5">Anchor active</span>
+</div>
+</div>
+</div>
+<!-- Life Stages & Evolution Roadmap -->
+<div class="p-4 rounded-3xl bg-surface-container space-y-3.5 shadow-lg">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Life Stages &amp; Evolution</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your sustained focus unlocks higher forms</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm">Stage 3 of 5</span>
+</div>
+<!-- Stepper Timeline -->
+<div class="space-y-3 pt-1">
+<!-- Stage 1 -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[15px] font-bold">check</span>
+</div>
+<div class="w-0.5 h-6 bg-secondary"></div>
+</div>
+<div class="flex-1 min-w-0 pb-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Stage 1: Newborn Sprout</span>
+<span class="font-label-sm text-label-sm text-secondary">Days 1–3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Discovered initial morning rhythm.</p>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[15px] font-bold">check</span>
+</div>
+<div class="w-0.5 h-6 bg-primary"></div>
+</div>
+<div class="flex-1 min-w-0 pb-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Stage 2: Growing Seeker</span>
+<span class="font-label-sm text-label-sm text-secondary">Days 4–7</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Unlocked sanctuary cushion and moss flora.</p>
+</div>
+</div>
+<!-- Stage 3 (Active) -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary ring-4 ring-primary/20">
+<span class="material-symbols-outlined text-[15px]">auto_awesome</span>
+</div>
+<div class="w-0.5 h-6 bg-surface-container-highest"></div>
+</div>
+<div class="flex-1 min-w-0 pb-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-semibold">Stage 3: Thriving Companion</span>
+<span class="font-label-sm text-label-sm text-primary">Active Now</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Unlocks responsive mood auras and focus telepathy.</p>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="w-0.5 h-6 bg-surface-container-highest"></div>
+</div>
+<div class="flex-1 min-w-0 pb-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Stage 4: Luminary Form</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Unlocks at Day 15</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Celestial coat pattern &amp; deep flow resonant soundtrack.</p>
+</div>
+</div>
+<!-- Stage 5 -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Stage 5: Celestial Guardian</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Day 60+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Everlasting sanctuary bond and master habit aura.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Compassionate Dormancy & Care Philosophy (Interactive Expandable) -->
+<div class="rounded-3xl bg-surface-container overflow-hidden shadow-lg transition-all duration-200">
+<button class="w-full p-4 flex items-center justify-between text-left focus:outline-none" id="philosophy-toggle-btn" type="button">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">bedtime</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Dayflow Care Philosophy</span>
+<span class="font-label-sm text-label-sm text-secondary">Guilt-Free Productivity Sanctuary</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200" id="philosophy-icon">expand_more</span>
+</button>
+<div class="px-4 pb-4 space-y-3" id="philosophy-content">
+<div class="p-3 rounded-2xl bg-surface-container-high space-y-2.5">
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="text-primary font-semibold">Missed a day or taking a break?</strong> Lumi never gets sick, leaves, or dies. Prolonged absence gently rests Lumi into cozy sleep under a warm blanket.
+        </p>
+<!-- Dormancy Resting State Visual Card -->
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-lowest">
+<img alt="Lumi - 2D Vector Sleeping Pet (Dormant Rest)" class="w-16 h-16 rounded-xl object-cover shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V3il4dwbgacY8uGZ0GSe7GU4796YuItBxkTvkDfmn3Uo6jJv_MMiVHEi2OpA7DO1mPPQtGyUE_E1qkZUpE7MRL3zNCx2QctXAfZ-mvnpa3XGih4vl2iJ1x7b7NQ64a8Xn4NW_byH8-tdxQXxRnlIWVV92F4C-ZK9aIOSQH8CPEo144PXEfOK8Tcams0nIIF_j4zvjwomDwiL7RSKwDDmgzj4IZRhzalL3N7b7_eOrhx_FLzpgOoUwMBw">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">nightlight</span>
+              Cozy Dormancy State
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              One single completed task gently awakens Lumi with full joy. Your journey is always preserved.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm pt-1">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Zero streak anxiety • Infinite recovery forgiveness
+        </div>
+</div>
+</div>
+</div>
+<!-- Primary Workflow Action CTA -->
+<div class="pt-2 sticky bottom-4 z-30">
+<button class="w-full py-3.5 px-5 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-between shadow-xl shadow-primary/20 active:scale-[0.98] transition-transform duration-150" type="button">
+<div class="flex items-center gap-2 text-left">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+<span class="">Continue Next Task: <strong class="font-semibold">Spring Boot Architecture</strong></span>
+</div>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  // Petting interaction: floating hearts and gentle purr feedback
+  const petBtn = document.getElementById('pet-companion-btn');
+  const petTile = document.getElementById('pet-action-tile');
+  const container = document.getElementById('hearts-container');
+
+  function spawnHearts() {
+    if (!container) return;
+    
+    // Trigger subtle device haptic if supported
+    if (window.navigator && window.navigator.vibrate) {
+      window.navigator.vibrate([20, 40, 20]);
+    }
+
+    const emojis = ['💜', '✨', '🐾', '🌸'];
+    for (let i = 0; i < 4; i++) {
+      const heart = document.createElement('span');
+      heart.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+      heart.className = 'absolute text-base transition-all duration-700 ease-out pointer-events-none select-none';
+      heart.style.left = `${40 + (Math.random() * 20 - 10)}%`;
+      heart.style.top = `${60 + (Math.random() * 15 - 7)}%`;
+      heart.style.opacity = '1';
+      heart.style.transform = 'scale(0.8) translateY(0)';
+      container.appendChild(heart);
+
+      requestAnimationFrame(() => {
+        heart.style.opacity = '0';
+        heart.style.transform = `scale(1.4) translateY(-${60 + Math.random() * 40}px) translateX(${Math.random() * 40 - 20}px)`;
+      });
+
+      setTimeout(() => {
+        heart.remove();
+      }, 750);
+    }
+  }
+
+  if (petBtn) petBtn.addEventListener('click', spawnHearts);
+  if (petTile) petTile.addEventListener('click', spawnHearts);
+
+  // Expandable Philosophy Drawer
+  const philToggle = document.getElementById('philosophy-toggle-btn');
+  const philContent = document.getElementById('philosophy-content');
+  const philIcon = document.getElementById('philosophy-icon');
+
+  if (philToggle && philContent && philIcon) {
+    philToggle.addEventListener('click', () => {
+      const isHidden = philContent.classList.contains('hidden');
+      if (isHidden) {
+        philContent.classList.remove('hidden');
+        philIcon.style.transform = 'rotate(0deg)';
+      } else {
+        philContent.classList.add('hidden');
+        philIcon.style.transform = 'rotate(-90deg)';
+      }
+    });
+  }
+</script></main>
+
+</body></html>

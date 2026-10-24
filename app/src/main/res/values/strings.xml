@@ -1,0 +1,4 @@
+<resources>
+    <string name="focus_guard_description">Send selected apps to Home while a Dayflow focus session is running.</string>
+    <string name="focus_guard_summary">Dayflow Focus Guard · only acts during a focus session you start</string>
+</resources>

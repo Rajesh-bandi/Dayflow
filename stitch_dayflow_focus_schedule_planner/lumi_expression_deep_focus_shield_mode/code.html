@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="focusShield" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#101114" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lumiBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4B5FD"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="lumiBelly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EDE9FE"/>
+      <stop offset="100%" stop-color="#DDD6FE"/>
+    </linearGradient>
+    <linearGradient id="sproutGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="neonShield">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="200" r="170" fill="url(#focusShield)"/>
+
+  <!-- Protective Focus Hexagon / Laser Glow Aura -->
+  <polygon points="200,60 310,125 310,275 200,340 90,275 90,125" fill="none" stroke="#73E2B3" stroke-width="2" opacity="0.4" stroke-dasharray="6 6"/>
+  <!-- Focus Ring Target -->
+  <circle cx="200" cy="200" r="145" fill="none" stroke="#A78BFA" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="335" rx="85" ry="14" fill="#090A0D" opacity="0.6"/>
+
+  <!-- Mascot Body Group -->
+  <g id="character">
+    <!-- Determined headband with tiny mint leaf emblem -->
+    <path d="M 125 175 Q 200 162 275 175" stroke="#10B981" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="200" cy="168" r="6" fill="#73E2B3" filter="url(#neonShield)"/>
+
+    <!-- Ears (Alert, upright, locked-in) -->
+    <path d="M 135 150 C 110 70 125 35 150 42 C 170 50 168 110 160 150 Z" fill="url(#lumiBody)"/>
+    <path d="M 138 135 C 120 75 132 55 146 60 C 158 68 156 108 152 135 Z" fill="#F472B6" opacity="0.4"/>
+
+    <path d="M 240 150 C 248 110 252 50 272 42 C 295 35 310 70 285 150 Z" fill="url(#lumiBody)"/>
+    <path d="M 248 135 C 255 105 258 65 272 60 C 286 55 292 78 275 135 Z" fill="#F472B6" opacity="0.4"/>
+
+    <!-- Plump Body -->
+    <path d="M 120 240 C 105 180 135 130 200 130 C 265 130 295 180 280 240 C 295 290 275 325 200 325 C 125 325 105 290 120 240 Z" fill="url(#lumiBody)"/>
+
+    <!-- Sprout (Steady vibrant green) -->
+    <path d="M 200 130 C 200 100 206 90 214 85 C 224 80 230 92 216 100 C 206 106 203 118 202 130 Z" fill="url(#sproutGrad)"/>
+    <path d="M 200 115 C 190 105 178 108 178 116 C 178 124 190 123 200 120 Z" fill="#73E2B3"/>
+
+    <!-- Belly -->
+    <ellipse cx="200" cy="265" rx="52" ry="46" fill="url(#lumiBelly)"/>
+
+    <!-- Determined / Focused Eyes (Narrowed intensity, sharp catchlights) -->
+    <!-- Left Eye -->
+    <g>
+      <!-- Half-lidded determined brow -->
+      <path d="M 152 195 Q 166 190 178 198" fill="none" stroke="#2E1065" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="165" cy="209" rx="12" ry="12" fill="#18181B"/>
+      <circle cx="165" cy="209" r="8" fill="#312E81"/>
+      <circle cx="163" cy="206" r="3.5" fill="#FFFFFF"/>
+      <circle cx="168" cy="213" r="2" fill="#73E2B3"/>
+    </g>
+    <!-- Right Eye -->
+    <g>
+      <path d="M 222 198 Q 234 190 248 195" fill="none" stroke="#2E1065" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="235" cy="209" rx="12" ry="12" fill="#18181B"/>
+      <circle cx="235" cy="209" r="8" fill="#312E81"/>
+      <circle cx="233" cy="206" r="3.5" fill="#FFFFFF"/>
+      <circle cx="238" cy="213" r="2" fill="#73E2B3"/>
+    </g>
+
+    <!-- Tiny Nose -->
+    <ellipse cx="200" cy="218" rx="3.5" ry="2.5" fill="#7C3AED"/>
+
+    <!-- Confident Determined Smirk -->
+    <path d="M 194 226 Q 202 230 209 224" fill="none" stroke="#581C87" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Paws Clenched in Focus / Guarding State -->
+    <ellipse cx="172" cy="256" rx="11" ry="9" fill="#DDD6FE"/>
+    <ellipse cx="228" cy="256" rx="11" ry="9" fill="#DDD6FE"/>
+
+    <!-- Feet -->
+    <ellipse cx="162" cy="320" rx="16" ry="10" fill="#7C3AED"/>
+    <ellipse cx="238" cy="320" rx="16" ry="10" fill="#7C3AED"/>
+  </g>
+</svg>

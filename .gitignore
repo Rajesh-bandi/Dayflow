@@ -1,0 +1,25 @@
+# Gradle and Android build output
+.gradle/
+**/build/
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.kotlin/
+
+# Local machine and generated files
+.DS_Store
+Thumbs.db
+*.apk
+*.aab
+*.jks
+*.keystore
+captures/
+
+# Duplicate archive of the checked-in Stitch reference folder
+/stitch_dayflow_focus_schedule_planner.zip
+/dayflow_running.png
+/dayflow_today.png
+/shot2.png
+/shot3.png

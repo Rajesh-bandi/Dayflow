@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121316;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:max(1.5rem,env(safe-area-inset-bottom,0px));}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-variant": "#343538", "inverse-primary": "#674bb5", "inverse-on-surface": "#2f3034", "on-surface": "#e3e2e6", "primary-fixed": "#e8ddff", "on-primary-fixed": "#21005e", "tertiary": "#a4c9ff", "error-container": "#93000a", "secondary-fixed-dim": "#6cdbac", "on-tertiary-container": "#003564", "error": "#ffb4ab", "on-tertiary-fixed": "#001c39", "on-secondary-fixed": "#002115", "on-primary": "#381385", "secondary-container": "#2ca379", "tertiary-fixed-dim": "#a4c9ff", "outline": "#948e9d", "primary-container": "#a78bfa", "on-primary-fixed-variant": "#4f319c", "surface-bright": "#38393c", "surface-container-low": "#1b1b1f", "on-background": "#e3e2e6", "tertiary-fixed": "#d4e3ff", "tertiary-container": "#6a9fe5", "on-error-container": "#ffdad6", "on-secondary-container": "#003120", "surface-container-high": "#292a2d", "outline-variant": "#494552", "on-secondary": "#003826", "surface": "#121316", "surface-container-lowest": "#0d0e11", "primary-fixed-dim": "#cebdff", "surface-container": "#1f1f23", "surface-dim": "#121316", "on-tertiary-fixed-variant": "#004883", "on-surface-variant": "#cac4d4", "surface-container-highest": "#343538", "background": "#121316", "inverse-surface": "#e3e2e6", "secondary-fixed": "#89f8c7", "on-secondary-fixed-variant": "#005139", "on-tertiary": "#00315d", "on-error": "#690005", "surface-tint": "#cebdff", "on-primary-container": "#3c1989", "primary": "#cebdff", "secondary": "#6cdbac" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-md": "0.75rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "1.25rem" }, fontFamily: { "body-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Dayflow Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1U1WlqjCdna9blSlbkZJ5wb5Ca4kdi9cGA628JjzUBcKEGgH4m4zhegceAy1tXX1xTgQHJ0b6hyVJAbDZN9OppEG8wL20RD7Qqzst7CxDI4DQvkvE_urS0LwvIUMfL72ZEYU9hrvIU3MQ1vTe3KY3L8FpntUWUmrNV9io0GspVL3X5EuTbD6Qi7J08vkJYxxj7lWVhRFhgs4mC_kcOjN6-AcJq79o3peFIkIW8tiNauXaxDgDVTzFuYmjQ"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Dayflow</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Focus</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Profile Menu" class="w-11 h-11 flex items-center justify-center rounded-full transition-transform active:scale-95"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RXvx7cJfrRLT2PzCs60GGfr6onj8BHlbsE2eVAVId195qtHME3YZpoC-nvRroLhhh5ZBKJSvOanSLM-zxoNcwj_xTdwaQdP2Ty-PjRh2-NQmCDzamGPt0JrbwS1wqmS-vbpQUZu5OTDDm_AAaX2iDS0tAUV1gRgaeQb8Uy144KTi1zZv_P2cV3ZBSSjUbSwHexjdGs5xHfs0_cywe4in0P-AfdSniwQ4AgW76uFG7DH3_13Gc1Fb"/></button></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full gap-space-lg select-none">
+<!-- Top Session Bar / Header Context -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<button class="w-10 h-10 -ml-2 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors active:scale-95" id="back-nav-btn">
+<span class="material-symbols-outlined text-[22px]">arrow_back</span>
+</button>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Session in Flight</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Focus Sanctuary</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Deep Work Profile</span>
+</div>
+</div>
+<!-- Ambient Pulsing Focus Ring Card -->
+<div class="relative flex flex-col items-center justify-center p-space-lg rounded-2xl bg-surface-container-low shadow-xl overflow-hidden">
+<!-- Gentle Ambient Radial Glow behind the clock -->
+<div class="absolute -top-12 w-64 h-64 rounded-full bg-primary-container/10 blur-3xl pointer-events-none animate-pulse" style="animation-duration: 6s;"></div>
+<div class="absolute -bottom-10 w-56 h-56 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<!-- Interactive Circular Progress Ring -->
+<div class="relative w-64 h-64 flex items-center justify-center my-space-xs">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 240 240">
+<!-- Background Track -->
+<circle cx="120" cy="120" fill="transparent" r="102" stroke="#292a2d" stroke-linecap="round" stroke-width="10"></circle>
+<!-- Active Progress Arc (Calculated ~ 76% remaining) -->
+<circle class="transition-all duration-1000 ease-linear drop-shadow-[0_0_12px_rgba(108,219,172,0.35)]" cx="120" cy="120" fill="transparent" id="progress-ring-circle" r="102" stroke="#6cdbac" stroke-dasharray="640.88" stroke-dashoffset="153.8" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<!-- Center Countdown Content -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm tracking-widest text-on-surface-variant uppercase mb-1">Remaining Time</span>
+<div class="flex items-baseline tracking-tight">
+<span class="font-display-lg text-display-lg font-bold text-on-surface tracking-tighter" id="timer-display">34:12</span>
+</div>
+<div class="flex items-center gap-1.5 mt-2 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">timelapse</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Goal: 45:00</span>
+</div>
+</div>
+</div>
+<!-- Active Task Headline -->
+<div class="flex flex-col items-center text-center mt-space-xs z-10">
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Spring Boot Development</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Deep Architecture</span>
+<span class="text-outline">•</span>
+<span class="text-secondary font-medium">14 Distracting Apps Blocked</span>
+</p>
+<!-- Calming micro-copy -->
+<div class="mt-3 px-4 py-2 rounded-xl bg-surface-container/60 backdrop-blur-md max-w-xs">
+<p class="font-body-sm text-body-sm text-primary text-center leading-snug">
+          "Flow state engaged. Your essential apps remain accessible."
+        </p>
+</div>
+</div>
+</div>
+<!-- Android Native Shield Status Container -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-2xl bg-surface-container shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Android System Shield</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kernel-level app interceptor</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+        Active
+      </span>
+</div>
+<!-- Sub-status badge -->
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-high/80 text-on-surface-variant text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>Accessibility Service &amp; Usage Stats daemon synced</span>
+</div>
+<!-- Blocked Apps Row with Muted Icons & Red Slash -->
+<div class="flex flex-col gap-2 mt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Intercepted Distractions (14)</span>
+<span class="font-label-sm text-label-sm text-primary cursor-pointer hover:underline">View All</span>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<!-- App: Instagram -->
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-high/60 group hover:bg-surface-container-high transition-colors">
+<div class="relative w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px] grayscale opacity-60">photo_camera</span>
+<div class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px] font-bold">block</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5 truncate max-w-full">Insta</span>
+</div>
+<!-- App: X (Twitter) -->
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-high/60 group hover:bg-surface-container-high transition-colors">
+<div class="relative w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px] grayscale opacity-60">tag</span>
+<div class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px] font-bold">block</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5 truncate max-w-full">X (Tw)</span>
+</div>
+<!-- App: YouTube -->
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-high/60 group hover:bg-surface-container-high transition-colors">
+<div class="relative w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px] grayscale opacity-60">smart_display</span>
+<div class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px] font-bold">block</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5 truncate max-w-full">YouTube</span>
+</div>
+<!-- App: Reddit -->
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-high/60 group hover:bg-surface-container-high transition-colors">
+<div class="relative w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px] grayscale opacity-60">forum</span>
+<div class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px] font-bold">block</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5 truncate max-w-full">Reddit</span>
+</div>
+<!-- App: TikTok -->
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-high/60 group hover:bg-surface-container-high transition-colors">
+<div class="relative w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px] grayscale opacity-60">music_video</span>
+<div class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[11px] font-bold">block</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5 truncate max-w-full">TikTok</span>
+</div>
+</div>
+</div>
+<!-- Allowed Essential Apps Carousel/List -->
+<div class="flex flex-col gap-2 mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Allowed Essential Tools</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-high/40">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Slack</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Work DMs only</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-high/40">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">headphones</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Spotify</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Focus Soundtracks</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-high/40">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">IntelliJ IDEA</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Workspace</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-high/40">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">language</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Chrome</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Docs allowed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Safety & Bypass Controls -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-2xl bg-surface-container shadow-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Emergency Phone Calls</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rings through for favorited contacts</span>
+</div>
+</div>
+<!-- Native Styled Switch -->
+<button aria-label="Toggle Phone Calls" class="w-12 h-7 rounded-full bg-secondary-container p-0.5 transition-colors flex items-center justify-end" id="call-toggle-btn">
+<span class="w-6 h-6 rounded-full bg-on-secondary shadow-md transform transition-transform"></span>
+</button>
+</div>
+<!-- Long-press Emergency Bypass Barrier -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Mindful Bypass Barrier</span>
+<span class="font-label-sm text-label-sm text-outline">10s Hold Required</span>
+</div>
+<div class="relative w-full rounded-xl bg-surface-container-high overflow-hidden select-none">
+<!-- Progress Fill for deliberate hold -->
+<div class="absolute inset-y-0 left-0 bg-primary/20 w-0 transition-all duration-75 ease-out" id="hold-progress-fill"></div>
+<button class="relative w-full py-3.5 px-4 flex items-center justify-center gap-2 text-on-surface active:scale-[0.99] transition-transform" id="emergency-pass-btn">
+<span class="material-symbols-outlined text-[18px] text-primary">hourglass_pause</span>
+<span class="font-label-lg text-label-lg font-medium" id="emergency-label">Hold for 5-min Urgent Break</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-outline text-center mt-0.5">
+        Prevents subconscious checking loops. Resumes automatically.
+      </p>
+</div>
+</div>
+<!-- Primary Dynamic Action Controls -->
+<div class="flex flex-col gap-space-sm pt-space-xs pb-space-sm">
+<!-- Breath / Pause Action -->
+<button class="w-full py-3.5 px-space-md rounded-2xl bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-[0_0_24px_-4px_rgba(167,139,250,0.35)] active:scale-[0.98] transition-transform" id="breathe-btn">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span>Take a 5m Breath &amp; Reflect</span>
+</button>
+<!-- Discreet Gentle Exit Action -->
+<button class="w-full py-2.5 px-space-md rounded-xl text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" id="early-exit-btn">
+<span class="material-symbols-outlined text-[16px]">logout</span>
+<span>Conclude Session Early</span>
+</button>
+</div>
+<!-- Interactive Confirmation Bottom Sheet Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-sm hidden items-end justify-center p-space-md transition-opacity" id="exit-modal">
+<div class="w-full max-w-sm rounded-3xl bg-surface-container-high p-space-lg shadow-2xl flex flex-col gap-space-md animate-in fade-in slide-in-from-bottom duration-200">
+<div class="flex items-center gap-space-sm text-on-surface">
+<div class="w-10 h-10 rounded-2xl bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">self_improvement</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold">Honoring Your Effort</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">No guilt. 34 minutes of intentional deep focus logged.</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Would you like to celebrate and log your current progress into your daily rhythm, or return to complete the block?
+      </p>
+<div class="flex flex-col gap-2 mt-1">
+<button class="w-full py-3 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform" id="confirm-finish-btn">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Save &amp; Complete (34 mins)</span>
+</button>
+<button class="w-full py-3 rounded-xl bg-surface-variant text-on-surface font-label-lg text-label-lg font-medium active:scale-95 transition-transform" id="cancel-modal-btn">
+          Keep Flowing
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Countdown simulation for dynamic visual presence
+  let totalSeconds = (34 * 60) + 12;
+  const timerEl = document.getElementById('timer-display');
+  const progressCircle = document.getElementById('progress-ring-circle');
+  const circumference = 2 * Math.PI * 102; // ~640.88
+
+  function updateTimer() {
+    if (totalSeconds <= 0) return;
+    totalSeconds--;
+    const mins = Math.floor(totalSeconds / 60);
+    const secs = totalSeconds % 60;
+    timerEl.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    
+    // Update SVG stroke
+    const totalGoal = 45 * 60;
+    const progressFraction = (totalGoal - totalSeconds) / totalGoal;
+    const offset = circumference * (1 - (totalSeconds / totalGoal));
+    progressCircle.style.strokeDashoffset = offset;
+  }
+  const timerInterval = setInterval(updateTimer, 1000);
+
+  // Phone Call Safe Switch Toggle
+  const callBtn = document.getElementById('call-toggle-btn');
+  let callsActive = true;
+  callBtn.addEventListener('click', () => {
+    callsActive = !callsActive;
+    if (callsActive) {
+      callBtn.className = "w-12 h-7 rounded-full bg-secondary-container p-0.5 transition-colors flex items-center justify-end";
+    } else {
+      callBtn.className = "w-12 h-7 rounded-full bg-surface-variant p-0.5 transition-colors flex items-center justify-start";
+    }
+  });
+
+  // Deliberate 10-Second Hold Action
+  const bypassBtn = document.getElementById('emergency-pass-btn');
+  const progressFill = document.getElementById('hold-progress-fill');
+  const emergencyLabel = document.getElementById('emergency-label');
+  let holdTimer = null;
+  let holdStart = 0;
+  const holdDuration = 10000; // 10 seconds
+
+  function startHold(e) {
+    e.preventDefault();
+    holdStart = Date.now();
+    emergencyLabel.textContent = "Hold firmly... (10s)";
+    
+    holdTimer = setInterval(() => {
+      const elapsed = Date.now() - holdStart;
+      const pct = Math.min(100, (elapsed / holdDuration) * 100);
+      progressFill.style.width = pct + '%';
+
+      const remSecs = Math.max(1, Math.ceil((holdDuration - elapsed) / 1000));
+      emergencyLabel.textContent = `Holding... ${remSecs}s remaining`;
+
+      if (elapsed >= holdDuration) {
+        clearInterval(holdTimer);
+        emergencyLabel.textContent = "5-min Emergency Window Granted";
+        progressFill.style.backgroundColor = "rgba(108, 219, 172, 0.4)";
+        setTimeout(() => {
+          emergencyLabel.textContent = "Emergency Pass Active (4:59)";
+        }, 1200);
+      }
+    }, 50);
+  }
+
+  function releaseHold() {
+    if (holdTimer) clearInterval(holdTimer);
+    if (progressFill.style.width !== '100%') {
+      progressFill.style.width = '0%';
+      emergencyLabel.textContent = "Hold for 5-min Urgent Break";
+    }
+  }
+
+  bypassBtn.addEventListener('mousedown', startHold);
+  bypassBtn.addEventListener('mouseup', releaseHold);
+  bypassBtn.addEventListener('mouseleave', releaseHold);
+  bypassBtn.addEventListener('touchstart', startHold);
+  bypassBtn.addEventListener('touchend', releaseHold);
+
+  // Modal Handlers
+  const earlyExitBtn = document.getElementById('early-exit-btn');
+  const exitModal = document.getElementById('exit-modal');
+  const cancelModalBtn = document.getElementById('cancel-modal-btn');
+  const confirmFinishBtn = document.getElementById('confirm-finish-btn');
+  const breatheBtn = document.getElementById('breathe-btn');
+
+  earlyExitBtn.addEventListener('click', () => {
+    exitModal.classList.remove('hidden');
+    exitModal.classList.add('flex');
+  });
+
+  cancelModalBtn.addEventListener('click', () => {
+    exitModal.classList.add('hidden');
+    exitModal.classList.remove('flex');
+  });
+
+  confirmFinishBtn.addEventListener('click', () => {
+    exitModal.classList.add('hidden');
+    timerEl.textContent = "Done!";
+    clearInterval(timerInterval);
+  });
+
+  breatheBtn.addEventListener('click', () => {
+    breatheBtn.classList.add('scale-95');
+    setTimeout(() => breatheBtn.classList.remove('scale-95'), 200);
+  });
+</script></main><div class="fixed bottom-6 right-margin-mobile z-50 pointer-events-auto pb-safe"><button aria-label="Create task" class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_24px_-2px_rgba(167,139,250,0.45)] hover:scale-105 active:scale-95 transition-all"><span class="material-symbols-outlined text-[28px]">add</span></button></div><nav class="fixed bottom-0 inset-x-0 z-40 pb-safe bg-surface-container-low/90 backdrop-blur-2xl shadow-[0_-1px_12px_rgba(0,0,0,0.25)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="today" href="#"><span class="material-symbols-outlined text-[22px]">today</span><span class="font-label-sm text-label-sm tracking-wide">Today</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="week" href="#"><span class="material-symbols-outlined text-[22px]">calendar_view_week</span><span class="font-label-sm text-label-sm tracking-wide">Week</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs transition-colors text-primary font-label-md" data-path="focus" href="#"><span class="material-symbols-outlined text-[22px]">timer</span><span class="font-label-sm text-label-sm tracking-wide">Focus</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="progress" href="#"><span class="material-symbols-outlined text-[22px]">insights</span><span class="font-label-sm text-label-sm tracking-wide">Progress</span></a></div></nav></body></html>

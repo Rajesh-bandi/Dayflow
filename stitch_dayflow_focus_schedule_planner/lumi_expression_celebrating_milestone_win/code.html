@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="celebGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#101114" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lumiBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DDD6FE"/>
+      <stop offset="40%" stop-color="#C4B5FD"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="lumiBelly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDE9FE"/>
+    </linearGradient>
+    <radialGradient id="blushGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#F43F5E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sproutGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="200" r="170" fill="url(#celebGlow)"/>
+
+  <!-- Confetti, Stars & Joy Bursts -->
+  <g opacity="0.9">
+    <!-- Star Left -->
+    <path d="M 85 110 Q 95 110 95 100 Q 95 110 105 110 Q 95 110 95 120 Q 95 110 85 110 Z" fill="#FDE047" filter="url(#goldGlow)"/>
+    <!-- Star Right -->
+    <path d="M 315 95 Q 325 95 325 85 Q 325 95 335 95 Q 325 95 325 105 Q 325 95 315 95 Z" fill="#73E2B3" filter="url(#goldGlow)"/>
+    <!-- Confetti Ribbons -->
+    <rect x="75" y="180" width="8" height="14" rx="3" fill="#A78BFA" transform="rotate(25 75 180)"/>
+    <rect x="320" y="170" width="8" height="14" rx="3" fill="#F472B6" transform="rotate(-35 320 170)"/>
+    <circle cx="110" cy="70" r="4" fill="#38BDF8"/>
+    <circle cx="295" cy="65" r="4.5" fill="#FDE047"/>
+    <circle cx="200" cy="50" r="5" fill="#73E2B3"/>
+  </g>
+
+  <!-- Shadow (Small bounce elevation) -->
+  <ellipse cx="200" cy="340" rx="75" ry="12" fill="#090A0D" opacity="0.4"/>
+
+  <!-- Mascot Body (Slightly bounced up in sheer joy) -->
+  <g id="character" transform="translate(0, -10)">
+    <!-- Ears (Upright, energetic, perky) -->
+    <!-- Left Ear -->
+    <path d="M 130 145 C 95 65 110 20 140 25 C 165 30 165 95 158 145 Z" fill="url(#lumiBody)"/>
+    <path d="M 133 130 C 112 70 120 40 138 45 C 152 50 152 95 148 130 Z" fill="#F472B6" opacity="0.5"/>
+
+    <!-- Right Ear -->
+    <path d="M 242 145 C 248 95 255 30 280 25 C 305 20 320 65 288 145 Z" fill="url(#lumiBody)"/>
+    <path d="M 252 130 C 255 95 260 50 274 45 C 288 40 296 70 276 130 Z" fill="#F472B6" opacity="0.5"/>
+
+    <!-- Plump Body -->
+    <path d="M 120 240 C 105 180 135 130 200 130 C 265 130 295 180 280 240 C 295 290 275 325 200 325 C 125 325 105 290 120 240 Z" fill="url(#lumiBody)"/>
+
+    <!-- Sprout Blooming with tiny flower/starlet! -->
+    <path d="M 200 130 C 200 100 206 90 214 85 C 224 80 230 92 216 100 C 206 106 203 118 202 130 Z" fill="url(#sproutGrad)"/>
+    <path d="M 200 115 C 190 105 178 108 178 116 C 178 124 190 123 200 120 Z" fill="#34D399"/>
+    <!-- Tiny golden celebration bloom on sprout tip -->
+    <circle cx="215" cy="85" r="5" fill="#FDE047" filter="url(#goldGlow)"/>
+
+    <!-- Belly -->
+    <ellipse cx="200" cy="265" rx="52" ry="46" fill="url(#lumiBelly)"/>
+
+    <!-- Cheerful rosy blush -->
+    <circle cx="150" cy="226" r="15" fill="url(#blushGlow)"/>
+    <circle cx="250" cy="226" r="15" fill="url(#blushGlow)"/>
+
+    <!-- Ecstatic Closed Joy Eyes (^ _ ^) -->
+    <path d="M 152 208 Q 166 190 180 208" fill="none" stroke="#1E1B4B" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 220 208 Q 234 190 248 208" fill="none" stroke="#1E1B4B" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Cute Nose -->
+    <ellipse cx="200" cy="214" rx="3.5" ry="2.5" fill="#7C3AED"/>
+
+    <!-- Big Happy Open Smile with pink tongue! -->
+    <path d="M 188 222 Q 200 240 212 222 Z" fill="#6D28D9"/>
+    <path d="M 193 230 Q 200 238 207 230 Z" fill="#F472B6"/>
+
+    <!-- Raised Paws Cheering Upwards in Victory (Hooray!) -->
+    <ellipse cx="140" cy="220" rx="12" ry="10" fill="#EDE9FE" transform="rotate(-40 140 220)"/>
+    <ellipse cx="260" cy="220" rx="12" ry="10" fill="#EDE9FE" transform="rotate(40 260 220)"/>
+
+    <!-- Feet -->
+    <ellipse cx="162" cy="320" rx="16" ry="10" fill="#8B5CF6"/>
+    <ellipse cx="238" cy="320" rx="16" ry="10" fill="#8B5CF6"/>
+    <ellipse cx="162" cy="318" rx="10" ry="6" fill="#EDE9FE"/>
+    <ellipse cx="238" cy="318" rx="10" ry="6" fill="#EDE9FE"/>
+  </g>
+</svg>

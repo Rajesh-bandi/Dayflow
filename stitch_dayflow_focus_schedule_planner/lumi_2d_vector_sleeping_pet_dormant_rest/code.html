@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Night Cozy Glow -->
+    <radialGradient id="nightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#312E81" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#1E1B4B" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#101114" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sleeping Body Muted Lavender Gradient -->
+    <linearGradient id="sleepBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+
+    <!-- Blanket Pattern Gradient -->
+    <linearGradient id="blanketGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Cushion Gradient -->
+    <linearGradient id="cushionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D2054"/>
+      <stop offset="100%" stop-color="#1B1438"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Backdrop -->
+  <circle cx="200" cy="200" r="170" fill="url(#nightGlow)"/>
+
+  <!-- Sleep Zzz particles -->
+  <g opacity="0.75" fill="#A78BFA">
+    <!-- Small crescent moon in corner -->
+    <path d="M 320 80 A 18 18 0 1 1 300 62 A 14 14 0 0 0 320 80 Z" fill="#FDE047" opacity="0.8"/>
+    
+    <!-- Z 1 -->
+    <path d="M 270 140 H 285 L 270 155 H 285" stroke="#C4B5FD" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Z 2 -->
+    <path d="M 292 115 H 304 L 292 127 H 304" stroke="#A78BFA" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Star speckles -->
+    <circle cx="100" cy="120" r="2" fill="#73E2B3" opacity="0.6"/>
+    <circle cx="120" cy="90" r="1.5" fill="#FDE047" opacity="0.5"/>
+  </g>
+
+  <!-- Velvet Cushion Bed -->
+  <ellipse cx="200" cy="290" rx="125" ry="32" fill="url(#cushionGrad)" stroke="#4C1D95" stroke-width="1.5"/>
+  <!-- Cushion tassels -->
+  <circle cx="80" cy="290" r="5" fill="#F59E0B"/>
+  <circle cx="320" cy="290" r="5" fill="#F59E0B"/>
+
+  <!-- Sleeping Lumi (Curled up cozy) -->
+  <g id="sleepingPet">
+    <!-- Drooped Relaxed Left Ear -->
+    <path d="M 140 210 C 90 200 80 235 105 245 C 130 255 145 230 150 215 Z" fill="url(#sleepBody)"/>
+    
+    <!-- Curled Plump Body -->
+    <path d="M 130 240 C 115 190 160 160 215 160 C 275 160 290 200 280 255 C 270 285 220 290 160 285 C 135 280 130 260 130 240 Z" fill="url(#sleepBody)"/>
+
+    <!-- Right Drooped Ear -->
+    <path d="M 245 195 C 285 185 300 220 275 235 C 255 245 240 215 245 195 Z" fill="url(#sleepBody)"/>
+
+    <!-- Resting Sprout on head -->
+    <path d="M 195 160 C 190 142 195 135 204 135 C 212 135 210 148 198 160 Z" fill="#34D399"/>
+
+    <!-- Content Sleeping Eyes (Satisfied gentle curved lines ^_^) -->
+    <path d="M 172 215 Q 182 225 192 215" fill="none" stroke="#2E1065" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 218 215 Q 228 225 238 215" fill="none" stroke="#2E1065" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Peaceful Soft Nose -->
+    <ellipse cx="205" cy="222" rx="3" ry="2" fill="#581C87"/>
+
+    <!-- Gentle Blush -->
+    <ellipse cx="168" cy="226" rx="9" ry="6" fill="#F472B6" opacity="0.4"/>
+    <ellipse cx="242" cy="226" rx="9" ry="6" fill="#F472B6" opacity="0.4"/>
+
+    <!-- Cozy Warm Quilted Blanket Covering Body -->
+    <path d="M 125 245 C 145 235 210 230 275 245 C 285 270 275 295 240 298 C 175 302 120 290 125 245 Z" fill="url(#blanketGrad)"/>
+    <!-- Blanket Top Fold (Mint contrast cuff) -->
+    <path d="M 125 245 C 150 236 210 232 275 245 C 275 252 265 256 250 253 C 200 244 150 246 125 252 Z" fill="#6EE7B7"/>
+
+    <!-- Tiny Paw peaking over the blanket -->
+    <ellipse cx="155" cy="245" rx="7" ry="5" fill="#DDD6FE"/>
+  </g>
+</svg>

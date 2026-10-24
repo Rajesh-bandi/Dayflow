@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="thinkingGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#C084FC" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#101114" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lumiBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4B5FD"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="lumiBelly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EDE9FE"/>
+      <stop offset="100%" stop-color="#DDD6FE"/>
+    </linearGradient>
+    <radialGradient id="blushGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sproutGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#73E2B3"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="200" r="170" fill="url(#thinkingGlow)"/>
+
+  <!-- AI Thinking / Idea Spark Particles & Holographic Orbit -->
+  <g opacity="0.85">
+    <ellipse cx="200" cy="90" rx="45" ry="12" fill="none" stroke="#73E2B3" stroke-width="2" stroke-dasharray="4 4" transform="rotate(-15 200 90)"/>
+    <!-- Glowing AI Lightbulb / Idea Starlet -->
+    <circle cx="280" cy="110" r="7" fill="#FDE047" filter="url(#softGlow)"/>
+    <path d="M 276 92 Q 280 96 284 92 Q 280 88 276 92 Z" fill="#FDE047"/>
+    <circle cx="265" cy="130" r="3.5" fill="#A78BFA"/>
+    <circle cx="115" cy="115" r="3" fill="#73E2B3"/>
+    <path d="M 120 160 Q 126 160 126 154 Q 126 160 132 160 Q 126 160 126 166 Q 126 160 120 160 Z" fill="#C4B5FD"/>
+  </g>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="335" rx="85" ry="15" fill="#090A0D" opacity="0.5"/>
+
+  <!-- Mascot Body Group -->
+  <g id="character" transform="translate(0, 0)">
+    <!-- Ears (One cocked thoughtfully / curious perk) -->
+    <!-- Left Ear (Curious tilt) -->
+    <path d="M 135 155 C 90 95 105 45 130 50 C 150 55 158 105 155 150 Z" fill="url(#lumiBody)"/>
+    <path d="M 136 140 C 112 88 120 62 134 65 C 146 70 148 105 146 135 Z" fill="#F472B6" opacity="0.45"/>
+
+    <!-- Right Ear (Tilted upward in focus) -->
+    <path d="M 240 150 C 265 95 285 45 305 45 C 322 45 325 85 285 150 Z" fill="url(#lumiBody)"/>
+    <path d="M 252 135 C 275 90 290 60 300 62 C 310 65 306 92 278 135 Z" fill="#F472B6" opacity="0.45"/>
+
+    <!-- Plump Head & Body -->
+    <path d="M 120 240 C 105 180 135 130 200 130 C 265 130 295 180 280 240 C 295 290 275 325 200 325 C 125 325 105 290 120 240 Z" fill="url(#lumiBody)"/>
+
+    <!-- Sprout on head with subtle glowing AI leaf aura -->
+    <path d="M 200 130 C 200 100 206 90 214 85 C 224 80 230 92 216 100 C 206 106 203 118 202 130 Z" fill="url(#sproutGrad)"/>
+    <path d="M 200 115 C 190 105 178 108 178 116 C 178 124 190 123 200 120 Z" fill="#73E2B3"/>
+    <circle cx="214" cy="85" r="4" fill="#73E2B3" opacity="0.8" filter="url(#softGlow)"/>
+
+    <!-- Belly -->
+    <ellipse cx="200" cy="265" rx="52" ry="46" fill="url(#lumiBelly)"/>
+
+    <!-- Blush -->
+    <circle cx="150" cy="228" r="13" fill="url(#blushGlow)"/>
+    <circle cx="250" cy="228" r="13" fill="url(#blushGlow)"/>
+
+    <!-- Thinking Eyes (Looking thoughtfully up & to the right) -->
+    <!-- Left Eye -->
+    <g>
+      <ellipse cx="165" cy="206" rx="13" ry="16" fill="#18181B"/>
+      <ellipse cx="168" cy="203" rx="10" ry="12" fill="#2E1065"/>
+      <circle cx="168" cy="199" r="5" fill="#FFFFFF"/>
+      <circle cx="173" cy="210" r="2.5" fill="#73E2B3"/>
+    </g>
+    <!-- Right Eye -->
+    <g>
+      <ellipse cx="235" cy="206" rx="13" ry="16" fill="#18181B"/>
+      <ellipse cx="238" cy="203" rx="10" ry="12" fill="#2E1065"/>
+      <circle cx="238" cy="199" r="5" fill="#FFFFFF"/>
+      <circle cx="243" cy="210" r="2.5" fill="#73E2B3"/>
+    </g>
+
+    <!-- Eyebrows (Curious, inquisitive slant) -->
+    <path d="M 155 186 Q 165 183 175 186" fill="none" stroke="#6D28D9" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 225 183 Q 235 181 245 186" fill="none" stroke="#6D28D9" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <ellipse cx="200" cy="216" rx="3.5" ry="2.5" fill="#7C3AED"/>
+
+    <!-- Inquisitive / Pondering small "o" mouth -->
+    <ellipse cx="200" cy="227" rx="4" ry="5" fill="#581C87"/>
+    <ellipse cx="200" cy="226" rx="2" ry="3" fill="#A78BFA"/>
+
+    <!-- Paws: One paw touching chin in thoughtful pose! -->
+    <!-- Left Paw resting on belly -->
+    <ellipse cx="160" cy="270" rx="11" ry="8" fill="#DDD6FE" transform="rotate(-15 160 270)"/>
+    <!-- Right Paw raised thoughtfully to chin -->
+    <ellipse cx="218" cy="235" rx="10" ry="9" fill="#DDD6FE" transform="rotate(-30 218 235)"/>
+
+    <!-- Feet -->
+    <ellipse cx="162" cy="320" rx="16" ry="10" fill="#8B5CF6"/>
+    <ellipse cx="238" cy="320" rx="16" ry="10" fill="#8B5CF6"/>
+    <ellipse cx="162" cy="318" rx="10" ry="6" fill="#DDD6FE"/>
+    <ellipse cx="238" cy="318" rx="10" ry="6" fill="#DDD6FE"/>
+  </g>
+</svg>

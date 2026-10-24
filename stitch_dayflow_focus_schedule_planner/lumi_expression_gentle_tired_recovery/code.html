@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="comfortGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#64748B" stop-opacity="0.25"/>
+      <stop offset="70%" stop-color="#475569" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#101114" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lumiBodyMuted" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B4A8D6"/>
+      <stop offset="50%" stop-color="#9884BA"/>
+      <stop offset="100%" stop-color="#7B699C"/>
+    </linearGradient>
+    <linearGradient id="lumiBellyMuted" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2DEEC"/>
+      <stop offset="100%" stop-color="#D0C9DF"/>
+    </linearGradient>
+    <radialGradient id="softBlush" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E879F9" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E879F9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="200" cy="200" r="170" fill="url(#comfortGlow)"/>
+
+  <!-- Tiny floating warm comfort hearts & gentle encouragement tea steam -->
+  <g opacity="0.6">
+    <path d="M 285 140 C 285 132 295 130 300 137 C 305 130 315 132 315 140 C 315 150 300 158 300 158 C 300 158 285 150 285 140 Z" fill="#F472B6"/>
+    <path d="M 95 155 C 95 149 102 147 106 152 C 110 147 117 149 117 155 C 117 162 106 168 106 168 C 106 168 95 162 95 155 Z" fill="#A78BFA"/>
+  </g>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="335" rx="80" ry="14" fill="#090A0D" opacity="0.45"/>
+
+  <!-- Mascot Body (Slightly slumped, gentle cozy tired posture) -->
+  <g id="character">
+    <!-- Ears (Softly drooping, tired/gentle) -->
+    <!-- Left Drooped Ear -->
+    <path d="M 140 160 C 85 155 75 195 100 205 C 122 215 145 185 150 165 Z" fill="url(#lumiBodyMuted)"/>
+    <path d="M 132 165 C 95 165 90 192 108 198 C 122 205 136 182 142 168 Z" fill="#E879F9" opacity="0.25"/>
+
+    <!-- Right Drooped Ear -->
+    <path d="M 245 160 C 300 155 310 195 285 205 C 263 215 240 185 235 165 Z" fill="url(#lumiBodyMuted)"/>
+    <path d="M 253 165 C 290 165 295 192 277 198 C 263 205 249 182 243 168 Z" fill="#E879F9" opacity="0.25"/>
+
+    <!-- Plump Body -->
+    <path d="M 120 240 C 105 180 135 135 200 135 C 265 135 295 180 280 240 C 295 290 275 325 200 325 C 125 325 105 290 120 240 Z" fill="url(#lumiBodyMuted)"/>
+
+    <!-- Sprout (Slightly bent / resting) -->
+    <path d="M 200 135 C 196 112 188 105 180 108 C 172 110 178 122 188 122 C 194 122 198 128 200 135 Z" fill="#10B981" opacity="0.8"/>
+
+    <!-- Belly -->
+    <ellipse cx="200" cy="265" rx="52" ry="46" fill="url(#lumiBellyMuted)"/>
+
+    <!-- Soft blush -->
+    <circle cx="152" cy="230" r="12" fill="url(#softBlush)"/>
+    <circle cx="248" cy="230" r="12" fill="url(#softBlush)"/>
+
+    <!-- Sleepy / Compassionate Low-energy Eyes (Half-closed, gentle, warm) -->
+    <!-- Left Eye -->
+    <g>
+      <ellipse cx="165" cy="214" rx="11" ry="8" fill="#2E1065"/>
+      <path d="M 152 210 Q 165 206 178 210" stroke="#1E1B4B" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="163" cy="213" r="3" fill="#FFFFFF"/>
+    </g>
+    <!-- Right Eye -->
+    <g>
+      <ellipse cx="235" cy="214" rx="11" ry="8" fill="#2E1065"/>
+      <path d="M 222 210 Q 235 206 248 210" stroke="#1E1B4B" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="233" cy="213" r="3" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Nose -->
+    <ellipse cx="200" cy="220" rx="3" ry="2" fill="#581C87"/>
+
+    <!-- Gentle Soft Curved Smile (Encouraging: "It's okay, let's take a tiny step") -->
+    <path d="M 194 227 Q 200 231 206 227" fill="none" stroke="#4C1D95" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Paws folded gently across belly -->
+    <ellipse cx="175" cy="268" rx="10" ry="7" fill="#D0C9DF"/>
+    <ellipse cx="225" cy="268" rx="10" ry="7" fill="#D0C9DF"/>
+
+    <!-- Feet -->
+    <ellipse cx="162" cy="320" rx="15" ry="9" fill="#7B699C"/>
+    <ellipse cx="238" cy="320" rx="15" ry="9" fill="#7B699C"/>
+  </g>
+</svg>

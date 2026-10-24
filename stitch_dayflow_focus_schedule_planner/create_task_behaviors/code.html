@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121316;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:max(1.5rem,env(safe-area-inset-bottom,0px));}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-variant": "#343538", "inverse-primary": "#674bb5", "inverse-on-surface": "#2f3034", "on-surface": "#e3e2e6", "primary-fixed": "#e8ddff", "on-primary-fixed": "#21005e", "tertiary": "#a4c9ff", "error-container": "#93000a", "secondary-fixed-dim": "#6cdbac", "on-tertiary-container": "#003564", "error": "#ffb4ab", "on-tertiary-fixed": "#001c39", "on-secondary-fixed": "#002115", "on-primary": "#381385", "secondary-container": "#2ca379", "tertiary-fixed-dim": "#a4c9ff", "outline": "#948e9d", "primary-container": "#a78bfa", "on-primary-fixed-variant": "#4f319c", "surface-bright": "#38393c", "surface-container-low": "#1b1b1f", "on-background": "#e3e2e6", "tertiary-fixed": "#d4e3ff", "tertiary-container": "#6a9fe5", "on-error-container": "#ffdad6", "on-secondary-container": "#003120", "surface-container-high": "#292a2d", "outline-variant": "#494552", "on-secondary": "#003826", "surface": "#121316", "surface-container-lowest": "#0d0e11", "primary-fixed-dim": "#cebdff", "surface-container": "#1f1f23", "surface-dim": "#121316", "on-tertiary-fixed-variant": "#004883", "on-surface-variant": "#cac4d4", "surface-container-highest": "#343538", "background": "#121316", "inverse-surface": "#e3e2e6", "secondary-fixed": "#89f8c7", "on-secondary-fixed-variant": "#005139", "on-tertiary": "#00315d", "on-error": "#690005", "surface-tint": "#cebdff", "on-primary-container": "#3c1989", "primary": "#cebdff", "secondary": "#6cdbac" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-md": "0.75rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "1.25rem" }, fontFamily: { "body-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors active:scale-95" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Dayflow Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1U1WlqjCdna9blSlbkZJ5wb5Ca4kdi9cGA628JjzUBcKEGgH4m4zhegceAy1tXX1xTgQHJ0b6hyVJAbDZN9OppEG8wL20RD7Qqzst7CxDI4DQvkvE_urS0LwvIUMfL72ZEYU9hrvIU3MQ1vTe3KY3L8FpntUWUmrNV9io0GspVL3X5EuTbD6Qi7J08vkJYxxj7lWVhRFhgs4mC_kcOjN6-AcJq79o3peFIkIW8tiNauXaxDgDVTzFuYmjQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate ml-space-xs">New Task Flow</h1></div><div class="flex items-center shrink-0"><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RXvx7cJfrRLT2PzCs60GGfr6onj8BHlbsE2eVAVId195qtHME3YZpoC-nvRroLhhh5ZBKJSvOanSLM-zxoNcwj_xTdwaQdP2Ty-PjRh2-NQmCDzamGPt0JrbwS1wqmS-vbpQUZu5OTDDm_AAaX2iDS0tAUV1gRgaeQb8Uy144KTi1zZv_P2cV3ZBSSjUbSwHexjdGs5xHfs0_cywe4in0P-AfdSniwQ4AgW76uFG7DH3_13Gc1Fb"/></button></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Top Stack Bar (Contextual Sheet Header) -->
+<div class="flex items-center justify-between py-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Close" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-transform active:scale-95 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">New Ritual</h2>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Draft saved 19:04</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Reset Template" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Clear or Reset" type="button">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</button>
+<button aria-label="Task Presets" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</button>
+</div>
+</div>
+<!-- Primary Task Identity & Title Section -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md mb-space-md">
+<div class="flex items-start gap-space-sm">
+<!-- Category Color Orb Trigger -->
+<div class="relative shrink-0 pt-1">
+<button aria-label="Select accent vibe" class="w-7 h-7 rounded-full bg-primary flex items-center justify-center shadow-sm relative group transition-transform active:scale-90" id="color-dot-trigger" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-on-primary"></span>
+</button>
+</div>
+<!-- Task Title Input -->
+<div class="flex-1 min-w-0">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1" for="task-title">Ritual Name</label>
+<input class="w-full bg-transparent font-headline-md text-headline-md text-on-surface placeholder:text-outline-variant focus:outline-none transition-all pb-1 leading-snug" id="task-title" placeholder="e.g. AWS Builder Center Daily Streak" type="text" value="AWS Builder Center Daily Streak"/>
+</div>
+</div>
+<!-- Notes & Intentions Input -->
+<div class="mt-space-md pt-space-xs">
+<div class="relative rounded-lg bg-surface-container-lowest p-space-sm">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">notes</span>
+<span class="font-label-sm text-label-sm">Intent &amp; Micro-goals</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Markdown supported</span>
+</div>
+<textarea class="w-full bg-transparent text-on-surface font-body-sm text-body-sm placeholder:text-outline-variant focus:outline-none resize-none pt-1" placeholder="Add details, execution notes, or mental trigger..." rows="2">Complete daily survey review + 1 cloud architecture challenge module before dinner.</textarea>
+</div>
+</div>
+</div>
+<!-- Behavior Selection Rail -->
+<div class="flex flex-col mb-space-md">
+<div class="flex items-center justify-between mb-space-xs px-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Ritual Archetype</span>
+<span class="font-label-sm text-label-sm text-primary">Tap to morph canvas</span>
+</div>
+<div class="grid grid-cols-5 gap-1.5 p-1 rounded-xl bg-surface-container-lowest">
+<!-- 1. Regular Task -->
+<button class="flex flex-col items-center justify-center py-2 px-1 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 group" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1 group-hover:text-on-surface">check_circle</span>
+<span class="font-label-sm text-label-sm text-center leading-tight">Regular</span>
+</button>
+<!-- 2. Deep Work -->
+<button class="flex flex-col items-center justify-center py-2 px-1 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 group" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1 group-hover:text-on-surface">shield</span>
+<span class="font-label-sm text-label-sm text-center leading-tight">Deep</span>
+</button>
+<!-- 3. Quick Action (SELECTED - Radiant highlight) -->
+<button class="flex flex-col items-center justify-center py-2 px-1 rounded-lg bg-primary text-on-primary font-semibold shadow-lg relative transition-all scale-[1.03]" type="button">
+<div class="absolute -top-1.5 -right-1 bg-secondary text-on-secondary font-label-sm text-[9px] px-1.5 py-0.2 rounded-full uppercase tracking-tighter shadow-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">bolt</span>
+<span>LINK</span>
+</div>
+<span class="material-symbols-outlined text-[20px] mb-1" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<span class="font-label-sm text-label-sm text-center leading-tight">Action</span>
+</button>
+<!-- 4. Habit -->
+<button class="flex flex-col items-center justify-center py-2 px-1 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 group" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1 group-hover:text-on-surface">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-center leading-tight">Habit</span>
+</button>
+<!-- 5. Break -->
+<button class="flex flex-col items-center justify-center py-2 px-1 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 group" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1 group-hover:text-on-surface">spa</span>
+<span class="font-label-sm text-label-sm text-center leading-tight">Break</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Section: Quick Action Contextual Deck -->
+<div class="flex flex-col gap-space-md">
+<!-- Destination & Launch Vector Card -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-md bg-primary-container/30 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">link</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Target Dispatch</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest text-secondary px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Instant Jump
+        </span>
+</div>
+<!-- Destination URL Input -->
+<div class="mb-space-md">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1.5" for="url-target">Destination URL / Deep Link</label>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-lg p-space-xs">
+<div class="flex items-center pl-2 text-outline">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<input class="flex-1 bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant focus:outline-none py-1.5" id="url-target" placeholder="https://..." type="url" value="https://builder.aws.com/"/>
+<button class="px-2.5 py-1.5 rounded-md bg-surface-container-high hover:bg-surface-bright text-primary font-label-sm text-label-sm flex items-center gap-1 transition-all active:scale-95 shadow-sm shrink-0" onclick="const testBtn = this; testBtn.innerText='Testing...'; setTimeout(() =&gt; testBtn.innerHTML='&lt;span class=\'material-symbols-outlined text-[14px]\'&gt;check&lt;/span&gt; Verified', 600);" type="button">
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+<span>Test Link</span>
+</button>
+</div>
+</div>
+<!-- Preferred Target System Selector -->
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1.5">Launch Environment</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Default Chrome Option (Active) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high text-on-surface cursor-pointer shadow-sm">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-tertiary shrink-0">language</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Default Browser</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Chrome Tab</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0" style="font-variation-settings: 'FILL' 1;">radio_button_checked</span>
+</div>
+<!-- AWS Native App Option (Inactive) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface cursor-pointer transition-colors">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-outline shrink-0">terminal</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg truncate">AWS Console</span>
+<span class="font-label-sm text-label-sm text-outline truncate">App Sandbox</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline shrink-0">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Execution Guards & Automation Toggles -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-md bg-secondary-container/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Execution Rules</span>
+</div>
+<!-- Toggle 1: Auto launch -->
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface">Auto-launch at scheduled moment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Directly jumps into destination without manual Dayflow swipe</span>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary relative transition-colors duration-200 shrink-0 focus:outline-none" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('bg-surface-container-highest'); const knob = this.querySelector('span'); knob.classList.toggle('translate-x-5'); knob.classList.toggle('translate-x-0.5');" role="switch" type="button">
+<span class="block w-6 h-6 rounded-full bg-on-primary shadow-sm transform translate-x-5 transition-transform duration-200"></span>
+</button>
+</div>
+<div class="h-px bg-surface-variant/40 w-full"></div>
+<!-- Toggle 2: Manual Confirm Guard -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="font-label-lg text-label-lg text-on-surface">Strict Confirmation Barrier</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-tertiary-container/30 text-tertiary">Anti-Cheat</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Prevents false streak marks when merely opening the site without completing the challenge</span>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary relative transition-colors duration-200 shrink-0 focus:outline-none mt-0.5" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('bg-surface-container-highest'); const knob = this.querySelector('span'); knob.classList.toggle('translate-x-5'); knob.classList.toggle('translate-x-0.5');" role="switch" type="button">
+<span class="block w-6 h-6 rounded-full bg-on-primary shadow-sm transform translate-x-5 transition-transform duration-200"></span>
+</button>
+</div>
+</div>
+<!-- Cadence & Timing Bento Grid -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-md bg-tertiary-container/30 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Timing &amp; Cadence</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UTC-05:00</span>
+</div>
+<!-- Recurrence Segmented Control -->
+<div class="mb-space-md">
+<div class="grid grid-cols-3 gap-1 p-1 rounded-xl bg-surface-container-lowest mb-space-sm">
+<button class="py-1.5 rounded-lg text-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Daily</button>
+<button class="py-1.5 rounded-lg text-center font-label-md text-label-md bg-surface-container-high text-primary shadow-sm font-semibold" type="button">Weekdays</button>
+<button class="py-1.5 rounded-lg text-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Custom</button>
+</div>
+<!-- Days of Week Chips -->
+<div class="flex items-center justify-between gap-1 pt-1">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-semibold shadow-sm">M</span>
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-semibold shadow-sm">T</span>
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-semibold shadow-sm">W</span>
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-semibold shadow-sm">T</span>
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-semibold shadow-sm">F</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest text-outline font-label-sm text-label-sm flex items-center justify-center">S</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest text-outline font-label-sm text-label-sm flex items-center justify-center">S</span>
+</div>
+</div>
+<!-- Time + Duration Split Layout -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<!-- Start Time Node -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Start Time</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">19:00</span>
+</div>
+<button aria-label="Adjust start time" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:text-primary transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">access_time</span>
+</button>
+</div>
+<!-- Duration Node -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Duration</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-secondary font-semibold">15</span>
+<span class="font-label-md text-label-md text-on-surface-variant">min</span>
+</div>
+</div>
+<div class="flex flex-col gap-0.5">
+<button aria-label="Increase duration" class="w-6 h-4 rounded bg-surface-container-high flex items-center justify-center text-on-surface hover:text-secondary active:scale-90" type="button">
+<span class="material-symbols-outlined text-[12px]">expand_less</span>
+</button>
+<button aria-label="Decrease duration" class="w-6 h-4 rounded bg-surface-container-high flex items-center justify-center text-on-surface hover:text-secondary active:scale-90" type="button">
+<span class="material-symbols-outlined text-[12px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sound Preview & Notification Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">At scheduled time (19:00)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Haptic chime: “Velvet Gong”</span>
+</div>
+</div>
+<button aria-label="Preview Sound" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-primary transition-all active:scale-90 shadow-sm shrink-0" onclick="const s = this.querySelector('span'); s.innerText = 'music_note'; setTimeout(() =&gt; s.innerText = 'volume_up', 1000);" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-Delight Ambient Streak Projection Badge -->
+<div class="mt-space-md p-space-md rounded-xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">insights</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Daily Streak Momentum</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Linking directly lifts completion rate by 42%</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-semibold shrink-0">+15 XP</span>
+</div>
+<!-- Fixed Bottom Navigation & Action Bar -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface/90 backdrop-blur-2xl px-margin-mobile pt-space-sm pb-safe shadow-[0_-8px_24px_rgba(0,0,0,0.5)]">
+<div class="max-w-md mx-auto flex flex-col gap-2">
+<!-- Primary Save Action Button -->
+<button class="w-full h-13 py-3 px-4 rounded-full bg-primary hover:bg-primary-fixed text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-lg hover:shadow-primary/25 transition-all active:scale-[0.98] font-semibold" id="save-task-cta" onclick="const btn = this; btn.innerText='Ritual Locked &amp; Ready ✨'; btn.classList.add('bg-secondary', 'text-on-secondary'); setTimeout(() =&gt; history.back(), 700);" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Save Ritual</span>
+</button>
+<!-- Secondary Split Bar -->
+<div class="grid grid-cols-2 gap-2 pb-1">
+<button class="h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all active:scale-95" onclick="const t = document.getElementById('task-title'); t.value=''; t.placeholder='Next ritual name...'; t.focus();" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">add</span>
+<span>Save &amp; Add Another</span>
+</button>
+<button class="h-10 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center justify-center transition-all active:scale-95" onclick="history.back()" type="button">
+<span>Discard</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Subtle interactive color orbital rotation for task marker dot
+  (function() {
+    const palette = ['#cebdff', '#6cdbac', '#a4c9ff', '#ffb4ab', '#e8ddff'];
+    let idx = 0;
+    const trigger = document.getElementById('color-dot-trigger');
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        idx = (idx + 1) % palette.length;
+        trigger.style.backgroundColor = palette[idx];
+      });
+    }
+  })();
+</script></main></body></html>
